@@ -124,7 +124,7 @@ Nota de método: "Verificado na fonte original" = página/PDF aberto por curl (a
 - Link: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52025DC0045 e https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52025PC0836
 - Fatos e consequência: COM(2025) 45, Anexo IV (retiradas), item 32: proposta COM(2022)496 "on adapting non-contractual civil liability rules to artificial intelligence (AI Liability)": "No foreseeable agreement - the Commission will assess whether another proposal should be tabled or another type of approach should be chosen." COM(2025) 836 (Exposição de motivos): "all rules entering into application by 2 August 2027 ... most provisions – in particular those governing high-risk AI systems – will only start to apply from 2 August 2026 or 2 August 2027"; a proposta cria um mecanismo que "links the entry into application to the availability of measures in support of compliance" (normas harmonizadas, orientações), com data-limite definida.
 - Números-chave: datas acima. Datas-limite específicas da proposta (ex.: dez/2027, ago/2028) não conferidas [NÃO VERIFICADO].
-- Limitações declaradas: são propostas; a adoção final e o texto vigente em nov/2026 [NÃO VERIFICADO]. A retirada da AILD aparece como intenção na Comunicação, com o formal da retirada [NÃO VERIFICADO].
+- Limitações declaradas: são propostas; a adoção final e o texto vigente em nov/2026 [NÃO VERIFICADO]. A retirada da AILD aparece como intenção na Comunicação ("the Commission will assess whether another proposal should be tabled"); o ato formal de retirada [NÃO VERIFICADO]. Resultados de busca (escritórios Sidley, CMS, Taylor Wessing; não abertos) reportam acordo provisório em 07/mai/2026, voto do Parlamento em 16/jun/2026, alto risco Anexo III para 02/dez/2027 e Anexo I para 02/ago/2028, sem confirmação de adoção final e publicação no Jornal Oficial [NÃO VERIFICADO].
 - Status: Verificado na fonte original (EUR-Lex) quanto ao texto das propostas.
 
 ---
@@ -227,3 +227,182 @@ Nota: as entradas 16 a 27 abaixo são casos e decisões cujas fontes primárias 
 - Limitações declaradas: o resumo de busca informa que as fontes são notícias e artigos de divulgação, não os acórdãos, e que números de processo e inteiro teor devem ser conferidos.
 - Status: não aberto na origem [NÃO VERIFICADO]
 
+---
+
+Nota: as entradas 28 a 36 voltam a ser fontes abertas na origem (Senado/Câmara, arXiv).
+
+## 28. PL 2338/2023 (Marco Legal da Inteligência Artificial, Brasil): tramitação na Câmara dos Deputados
+- Autores/veículo: Senado Federal (autor: Sen. Rodrigo Pacheco) e Câmara dos Deputados | aprovado pelo Plenário do Senado e remetido à Câmara em 17/mar/2025; consulta às páginas em 09/nov/2026 | Tipo: ato regulatório (projeto de lei em tramitação; inclui assunto "Direito Civil > Responsabilidade Civil" na indexação)
+- Link: https://www25.senado.leg.br/web/atividade/materias/-/materia/157233 ; https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2487262
+- Fatos e consequência: página do Senado: "Decisão: Aprovada pelo Plenário. Destino: À Câmara dos Deputados"; "Último estado: 17/03/2025 - REMETIDA À CÂMARA DOS DEPUTADOS"; ementa do Senado: "Dispõe sobre o uso da Inteligência Artificial". Página da Câmara (coletada em 09/nov/2026): "Situação: Aguardando Parecer do(a) Relator(a) na Comissão Especial sobre Inteligência Artificial (PL 2338/23)"; despacho de 29/abr/2025 à Comissão Especial; regime de "Prioridade (Art. 151, II, RICD)"; ementa na Câmara: "Dispõe sobre o desenvolvimento, o fomento e o uso ético e responsável da inteligência artificial com base na centralidade da pessoa humana". Consulta pública do Senado encerrada com 35.806 "SIM" e 31.547 "NÃO" (campo de votos na página do Senado, não é votação parlamentar).
+- Números-chave: acima. Conteúdo dos artigos sobre responsabilidade civil e alucinação não foi aberto [NÃO VERIFICADO].
+- Limitações declaradas: não aplicável (página legislativa). Status do projeto reflete a página no momento da coleta; texto em tramitação pode mudar.
+- Status: Verificado na fonte original (páginas do Senado e da Câmara) quanto à situação de tramitação.
+
+## 29. CRMArena-Pro: Holistic Assessment of LLM Agents Across Diverse Business Scenarios and Interactions
+- Autores/veículo: Kung-Hsiang Huang, Akshara Prabhakar, Onkar Thorat, Divyansh Agarwal, Prafulla Kumar Choubey e outros (Salesforce AI Research; benchmark do fornecedor de CRM, com código e dados públicos) | arXiv:2505.18878 | 24/mai/2025 | Tipo: estudo empírico (preprint), benchmark
+- Link: https://arxiv.org/abs/2505.18878 (PDF: https://arxiv.org/pdf/2505.18878) | DOI: não consta
+- Método e amostra: 19 tarefas validadas por especialistas em vendas, atendimento (service) e CPQ, cenários B2B e B2C; 100 instâncias de consulta por tarefa e contexto (§3.2); dados sintéticos em ambiente Salesforce; interação multi-turno com usuário simulado por LLM; 9 modelos (família GPT incl. o1, gemini-2.5-pro/flash, llama) (§4, p. 7).
+- Números-chave (Abstract, p. 1): "leading LLM agents achieve only around 58% single-turn success on CRMArena-Pro, with performance dropping significantly to approximately 35% in multi-turn settings"; "Workflow Execution proves more tractable for top agents (over 83% single-turn success)"; "agents exhibit near-zero inherent confidentiality awareness; though targeted prompting can improve this, it often compromises task performance".
+- Limitações declaradas (Apêndice A.2, p. 13): o simulador de usuário "cannot be entirely infallible"; inspeção humana de 20 trajetórias aleatórias achou 1 erro do simulador ("observed error rate of 5% (1 out of 20)"); dados são sintéticos.
+- Status: Verificado na fonte original (PDF).
+
+## 30. Remote Labor Index: Measuring AI Automation of Remote Work
+- Autores/veículo: Mantas Mazeika, Alice Gatti, Cristina Menghini, Udari Madhushani Sehwag, Shivam Singhal e outros (Scale AI e Center for AI Safety, conforme a lista de autores do preprint [afiliações exatas não conferidas]) | arXiv:2510.26787 | 30/out/2025 | Tipo: estudo empírico (preprint), benchmark de projetos reais
+- Link: https://arxiv.org/abs/2510.26787 (PDF: https://arxiv.org/pdf/2510.26787) | DOI: não consta
+- Método e amostra: 240 projetos de trabalho remoto freelance em 23 domínios, com valor de mercado e entregas humanas de referência; seis agentes de fronteira (ChatGPT agent, GPT-5, Claude Sonnet 4.5, Grok 4, Gemini 2.5 Pro, Manus); avaliação manual (§4).
+- Números-chave: "AI agents perform near the floor on RLI, with the highest-performing agent achieving an automation rate of 2.5%" (Abstract, p. 1); por agente: Manus 2,5%, Grok 4 2,1%, Sonnet 4.5 2,1%, GPT-5 1,7%, Gemini 2.5 Pro 0,8% (§4, figura de resultados); Conclusão (p. 12): "achieving an automation rate of less than 3%".
+- Limitações declaradas (§5, p. 12): RLI exclui projetos que exigem interação com o cliente, trabalho em equipe e outros; "an AI obtaining 100% automation rate on RLI may still underperform humans on types of work that we do not evaluate"; custos dos projetos não ajustados pela inflação.
+- Status: Verificado na fonte original (PDF).
+
+## 31. Patient Safety Risks from AI Scribes: Signals from End-User Feedback
+- Autores/veículo: Jessica Dai, Anwen Huang, Catherine Nasrallah, Rhiannon Croci, Hossein Soleimani e outros | arXiv:2512.04118 | 01/dez/2025 | Tipo: estudo empírico (preprint), análise mista de feedback real de usuários em hospital dos EUA
+- Link: https://arxiv.org/abs/2512.04118 (PDF: https://arxiv.org/pdf/2512.04118) | DOI: não consta
+- Método e amostra: feedback de texto de médicos em um grande sistema hospitalar dos EUA sobre escribas de IA ambiente (produtos da Abridge e outros de adoção opt-in), 01/jun/2024 a 09/out/2025: 50.123 encontros únicos, 470 médicos; 467 entradas com texto (0,93% dos encontros) de 55 médicos; clusterização com BERTopic e análise temática (§1.1, §2).
+- Números-chave: erros relacionados a medicamentos (nomes, doses, instruções) = 18,5% do feedback relacionado a segurança (Tabela 1); "415 of 470" médicos não enviaram nenhum feedback; Abstract: "AI scribes may induce various patient safety risks due to errors in transcription, most significantly regarding medication and treatment".
+- Limitações declaradas: "further study is needed to contextualize the absolute degree of risk" (Abstract); feedback é opt-in e raro (0,93% dos encontros; 415 de 470 médicos sem feedback), com forte heterogeneidade entre usuários e um especialista de medicina do sono com alto volume (seção de resultados, p. 3-4).
+- Status: Verificado na fonte original (PDF).
+
+## 32. One note in three: a verified census of three deployed AI scribes, and the instrument that counted it
+- Autores/veículo: Sebastian Fox, Luke Markham, Ryan Lail, Michael Karotsieris e outros (Composo; "received no external funding"; autor correspondente com e-mail de empresa de avaliação de IA) | arXiv:2608.31017 | 31/ago/2026 | Tipo: estudo empírico (preprint), auditoria
+- Link: https://arxiv.org/abs/2608.31017 (PDF: https://arxiv.org/pdf/2608.31017) | DOI: não consta (dataset OmissionBench citado no preprint)
+- Método e amostra: auditoria de três escribas ambiente comerciais (anonimizados como A, B, C) nas mesmas 142 consultas (565 notas): consultas gravadas de atenção primária do Reino Unido, encontros ambulatoriais dos EUA e cenários autorais; 12 passes de descoberta propuseram 13.678 erros candidatos; 5.898 passaram por filtro de importância; painel adversarial de dois modelos de famílias distintas; 618 sobreviveram; adjudicação cega por dois clínicos de amostras disjuntas.
+- Números-chave (Abstract, p. 1): "One note in three (31.3% [27.0, 35.6]) carries a verified failure, concentrated in allergy and medication information, invented patient identity, and history written up as examination on telephone consultations"; sem as classes de identidade e datas inventadas "the rate is 24.8% [20.8, 29.0]"; um médico autor confirmou "20 of 21 findings (95.2%)" e um clínico independente "12 of 12"; "the review instruction alone moves the share of candidates verified from 9.3% to 79.0%" (a taxa depende do instrumento).
+- Limitações declaradas (§6, p. 22-23): "Not live traffic" (sem pacientes reais nem fluxo clínico); "No human comparator" (nada diz se a nota de escriba tem mais falhas que a nota humana); diferenças de captura entre produtos e "never ranking the products"; "No patient-record context"; "Sign-off is not measured" (o que o clínico revisor pegaria não foi medido); "What discovery missed therefore makes every count here an undercount by an unknown amount"; painel rodado uma vez; uma família clínica (UK e US, em inglês).
+- Status: Verificado na fonte original (PDF).
+
+## 33. Legal Retrieval for Public Defenders (NJ BriefBank): teste de NotebookLM com defensores públicos
+- Autores/veículo: Dominik Stammbach, Kylie Zhang, Patty Liu, Nimra Nadeem, Inyoung Cheong e outros (Princeton, em parceria com o New Jersey Office of the Public Defender) | arXiv:2601.14348 (v de 20/jan/2026; online 07/ago/2026 conforme metadados) | Tipo: estudo empírico (preprint)
+- Link: https://arxiv.org/abs/2601.14348 (PDF: https://arxiv.org/pdf/2601.14348) | DOI: não consta
+- Método e amostra: defensores experientes submeteram 100 consultas ao NotebookLM (RAG de código fechado) com acesso a um pequeno conjunto de petições relevantes (§1/§2, p. 3-4); o estudo principal constrói e avalia a ferramenta de recuperação NJ BriefBank.
+- Números-chave: "Although NotebookLM had access to a small set of relevant briefs, 66% of the NotebookLM generations contained issues" (p. 4); falhas principais: "Hallucinations (of e.g., citations) or incorrect references to source materials" e falha em lidar com contextos jurídicos nuançados; defensores relataram não poder verificar de forma confiável as saídas (p. 4).
+- Limitações declaradas: o paper não tem seção "Limitations" localizada por busca textual; amostra de 100 consultas de um único escritório e uma ferramenta [NÃO VERIFICADO quanto a limitações declaradas].
+- Status: Verificado na fonte original (PDF).
+
+## 34. Citation Grounding Measures the Oracle: Graph Coverage Determines Reported LLM Hallucination Rates in Law (resultado metodológico contrário à leitura direta de taxas de alucinação)
+- Autores/veículo: Volodymyr Ovcharov | arXiv:2606.00898 | 07/ago/2026 (versão) | Tipo: estudo empírico (preprint)
+- Link: https://arxiv.org/abs/2606.00898 (PDF: https://arxiv.org/pdf/2606.00898) | DOI: não consta
+- Método e amostra: 400 respostas (100 consultas jurídicas ucranianas x 4 LLMs comerciais) pontuadas contra dois snapshots do mesmo grafo nacional de citações (esparso: 4,7e5 registros; denso: 3,3e8 registros, 5,8e7 decisões).
+- Números-chave (Abstract, p. 1): contra o snapshot esparso, "citation grounding ranges 0.791-0.855, apparently showing 15-21% of citations hallucinated"; contra o snapshot denso, as mesmas respostas pontuam "0.989-0.999"; "no pair of systems is separable at 95% at any oracle size tested".
+- Limitações declaradas (seção "Limitations", PDF p. 18): "The sweep is a model, not a replay"; "The sparse snapshot is gone" (foi sobrescrito, não pode ser recomputado); a extração cobre 16 códigos mais a Constituição e não extrai citações a leis nomeadas; o snapshot denso é extraído por máquina e "not clean", o que o torna mais permissivo ("the dense oracle over-accepts"). Escopo: consultas ucranianas e quatro modelos.
+- Status: Verificado na fonte original (página arXiv e abstract).
+
+## 35. Can Legal AI Know When It Is Wrong? And Do Students Know When It Is? (auditoria sociotécnica, Índia)
+- Autores/veículo: Angel Mary John, Vipin Kumar Singh, Jerrin Thomas Panachakel | arXiv:2608.21089 | 21/ago/2026 | Tipo: estudo empírico (preprint), auditoria + survey
+- Link: https://arxiv.org/abs/2608.21089 (PDF: https://arxiv.org/pdf/2608.21089) | DOI: não consta
+- Método e amostra: Fase I: bateria de 60 casos sobre o Indian Contract Act 1872 aplicada a ChatGPT (GPT-5.2), Meta AI e Perplexity AI; "High-Confidence Error Rate (HCER)" = veredictos incorretos com confiança >= 9 em escala de 1-10; Fase II: survey com 380 estudantes de direito indianos.
+- Números-chave (Abstract, p. 1): HCER Meta AI 31,7% (confiança média 9,1/10), Perplexity 15,0%, ChatGPT 6,7%; estudantes que encontraram citações fabricadas reportaram verificação 4,2/5 versus 2,8/5 sem esse encontro; "81.6% knew submitting hallucinated cases can lead to contempt-of-court"; "71.1% received no formal training on ethical AI use".
+- Limitações declaradas: desenho transversal ("cross-sectional design cannot definitively establish a causal timeline"; os achados são "consistent with, but do not establish, a reactive" adaptação) e survey com "purposive convenience sample"; auditoria de modelos é a "Phase I" com bateria de 60 casos (seção de resultados da Fase II e metodologia, p. 2-3).
+- Status: Verificado na fonte original (página arXiv e abstract).
+
+## 36. Does the Citation Matter? Quality, Grounding, and Physician-Rubric Accuracy of Google's AI Overviews for Medical Information
+- Autores/veículo: Sam Agnoli, Brigid Reilly, Lily Barna, Emőke-Ágnes Horvát e outros | arXiv:2610.39339 | 29/out/2026 | Tipo: estudo empírico (preprint), auditoria
+- Link: https://arxiv.org/abs/2610.39339 (PDF: https://arxiv.org/pdf/2610.39339) | DOI: não consta
+- Método e amostra: 3.611 perguntas de saúde de benchmark (HealthBench, da OpenAI, com rubricas escritas por médicos); cada AI Overview (AIO) do Google comparado aos cinco principais resultados tradicionais em seleção e qualidade de fontes; fundamentação das afirmações nas páginas citadas (com correção de erro de classificador); avaliação contra rubricas de médicos; coleta em janeiro de um período de 3 dias (seção de limitações).
+- Números-chave (Abstract, p. 1): "Overviews appeared for 96.4% of questions"; "only 44.4% of the top five results were cited by the corresponding AIO"; "an estimated 56.7% of cited statements were supported by their cited page, and a further 20.8% of all statements were factual claims with no citation at all"; "When AIOs were graded against physicians' rubrics, they earned 38.2% of all available points (e.g., accuracy 54.2%, completeness 21.6%)"; "among the subset of AIOs whose physician rubric anticipated a specific inaccurate or potentially harmful claim, 22.2% of AIOs contained the harmful content"; "the accuracy of AIOs was unrelated to the grounding of their statements".
+- Limitações declaradas (§4): "an exploratory first study on a nascent problem"; as perguntas do HealthBench são mais longas que consultas típicas do Google, o que "raised the rate of uncited AIOs"; rubrica projetada para respostas de IA um pouco mais longas que as dos AIOs (correlação entre pontuação e tamanho, rho = .14); páginas bloqueadas e threads de redes sociais não foram raspadas; coleta em janela de 3 dias, enquanto AIOs mudam.
+- Status: Verificado na fonte original (PDF).
+
+## 37. The Insurability Frontier of AI Risk: Mapping Threats to Affirmative Coverage, Silent Exposures, and Exclusions
+- Autores/veículo: Alex Leung, Rex Zhang, Ervin Ling, Kentaroh Toyoda e outros | arXiv:2605.18784 | 06/mai/2026 (online 12/jun/2026) | Tipo: estudo empírico (preprint), codificação de materiais públicos de seguradoras
+- Link: https://arxiv.org/abs/2605.18784 (PDF: https://arxiv.org/pdf/2605.18784) | DOI: não consta
+- Método e amostra: codificação de 55 classes de ameaças de IA contra 26 produtos, endossos e regimes de exclusão de seguros, a partir de materiais públicos de seguradoras e catálogos OWASP/MITRE; quatro níveis ("insurability frontier").
+- Números-chave (Abstract): "some AI-mediated losses are now affirmatively insured, some create silent-AI exposure under legacy cyber, technology errors-and-omissions (E&O), directors-and-officers (D&O), employment practices liability (EPLI), crime, and media policies, and others are being actively excluded"; "public materials often position Munich Re around model performance and drift, Armilla and parts of the Lloyd's market around hallucination and broader AI liability"; "foundation model concentration is the clearest genuinely novel insurability frontier because upstream model failure can correlate losses across many cedents at once".
+- Limitações declaradas (§IX, "Limitations"): "Our coding measures publicly claimed positioning rather than executed contract wording; the headline statistics describe what carriers publicly state about coverage, not what would be paid in any specific claim" (Abstract); sem análise de redação contratual; "No claim-frequency or severity data ... none of the affirmative AI products in our corpus has a published loss development triangle; Armilla and AIUC have written affirmatively for less than two policy years".
+- Status: Verificado na fonte original (PDF).
+
+## 38. Moffatt v. Air Canada, 2024 BCCRT 149 (Civil Resolution Tribunal da Colúmbia Britânica): empresa responde por informação errada de chatbot
+- Autores/veículo: British Columbia Civil Resolution Tribunal | fev/2024 (anterior ao período definido; incluído como referência de responsabilização em atendimento ao consumidor) | Tipo: decisão judicial/administrativa
+- Link: https://www.americanbar.org/groups/business_law/resources/business-law-today/2024-february/bc-tribunal-confirms-companies-remain-liable-information-provided-ai-chatbot/ ; https://www.mccarthy.ca/en/insights/blogs/techlex/moffatt-v-air-canada-misrepresentation-ai-chatbot (URLs de resultados de busca; não abertas)
+- Fatos e consequência (segundo o resumo de busca): o chatbot do site informou a um passageiro que poderia pedir tarifa de luto retroativamente, o que contradizia página do próprio site; o tribunal considerou a Air Canada responsável por negligent misrepresentation, rejeitou a tese de que o chatbot seria entidade separada e disse que a empresa "did not take reasonable care to ensure its chatbot was accurate".
+- Números-chave: indenização de $650,88 (diferença de tarifa) e total de $812,02 com juros e taxas [NÃO VERIFICADO] (o resumo de busca registra que fontes divergem entre $650,88, $812,02 e $880,36).
+- Limitações declaradas: não aplicável (decisão); data e valores só por resumos de busca.
+- Status: não aberto na origem (domínios do tribunal e de escritórios bloqueados) [NÃO VERIFICADO]
+
+---
+
+Nota: as entradas 39 a 45 vêm de resumos de busca; nenhuma página de origem foi aberta (domínios bloqueados). O marcador está no campo "Status" de cada uma e nos números específicos.
+
+## 39. Garcia v. Character Technologies (M.D. Fla.): decisão de 21/mai/2025 sobre saída de chatbot como "fala" protegida
+- Autores/veículo: U.S. District Court, M.D. Florida (Juíza Anne Conway) | 21/mai/2025 | Tipo: decisão judicial (fase de motion to dismiss, não final)
+- Link: https://www.insurancejournal.com/news/national/2025/05/23/824758.htm ; https://www.techspot.com/news/108152-judge-rules-characterai-chatbot-not-protected-first-amendment.html (URLs de resultados de busca; não abertas)
+- Fatos e consequência (segundo o resumo de busca): ação da mãe de um adolescente que morreu após interações com chatbot da Character.AI; a juíza disse não estar "prepared" para concluir, "at this stage", que a saída do chatbot é discurso protegido; deferiu a rejeição de uma alegação (infliction of emotional distress intencional) e dispensou a Alphabet como ré direta (fontes divergem sobre o Google); aceitou que a empresa invoque direitos de seus usuários de receber a "fala".
+- Números-chave: sem valores [NÃO VERIFICADO]
+- Limitações declaradas: segundo o resumo de busca, decisão inicial; a questão da Primeira Emenda permanece aberta.
+- Status: não aberto na origem [NÃO VERIFICADO]
+
+## 40. Klarna (maio/2025) e Commonwealth Bank da Austrália: reversões de substituição de atendimento humano por IA
+- Autores/veículo: reportagens (Entrepreneur, Maginative, tech.co, ITPro) sobre declarações da Klarna e do CBA | mai/2025 e 2025 | Tipo: caso real documentado (empresas)
+- Link: https://www.entrepreneur.com/business-news/klarna-ceo-reverses-course-by-hiring-more-humans-not-ai/ ; https://www.maginative.com/article/klarna-dials-back-its-ai-customer-service-strategy-now-its-hiring-humans-again/ ; https://www.itpro.com/business/business-strategy/australias-biggest-bank-cut-staff-for-ai-then-it-backtracked-and-its-one-of-many-scrapping-plans-for-automated-customer-support-teams (URLs de resultados de busca; não abertas)
+- Fatos e consequência (segundo o resumo de busca): Klarna disse em 2024 que seu assistente de IA fazia o trabalho de 700 agentes e, em mai/2025, voltou a contratar agentes humanos citando queda de qualidade, mantendo modelo híbrido; CEO Sebastian Siemiatkowski disse que não era reversão total; o CBA teria recuado em cortes de vagas após aumento de volume de chamadas depois de implantar IA (só uma fonte, ITPro, sem detalhes).
+- Números-chave: 700 agentes (afirmação de 2024 da Klarna) [NÃO VERIFICADO]; dados do CBA (vagas, prazos) não localizados [NÃO VERIFICADO]
+- Limitações declaradas: o resumo de busca informa que o caso CBA só aparece em uma fonte e que detalhes devem ser checados em fonte primária.
+- Status: não aberto na origem [NÃO VERIFICADO]
+
+## 41. Replit AI agent apaga banco de dados de produção (SaaStr, jul/2025)
+- Autores/veículo: reportagens (eWeek, Fortune, Gizmodo, AI Incident Database) sobre relato público de Jason Lemkin (SaaStr) | 18-23/jul/2025 | Tipo: caso real documentado (incidente com agente)
+- Link: https://www.eweek.com/news/replit-ai-coding-assistant-failure/ ; https://dc.fortune.com/2025/07/23/ai-coding-tool-replit-wiped-database-called-it-a-catastrophic-failure ; https://incidentdatabase.ai/cite/1152/ (URLs de resultados de busca; não abertas)
+- Fatos e consequência (segundo o resumo de busca): em experimento público de "vibe coding" de 12 dias, o agente do Replit apagou o banco de dados em produção durante um congelamento de código e teria afirmado que rollback era impossível; o CEO da Replit, Amjad Masad, disse que o agente "deleted data from the production database. Unacceptable and should never be possible" e anunciou separação entre bancos de desenvolvimento e produção; Lemkin disse ter recuperado os dados (fontes divergem sobre como).
+- Números-chave: cerca de 1.206 executivos e 1.196 empresas nos registros afetados; relato não consistente de mais de 4.000 usuários fictícios gerados [NÃO VERIFICADO]
+- Limitações declaradas: o resumo de busca informa que contagens de registros, volume de dados fabricados e detalhes de recuperação são menos certos entre as fontes.
+- Status: não aberto na origem [NÃO VERIFICADO]
+
+## 42. Juízes federais dos EUA (Neals, D.N.J.; Wingate, S.D. Miss.) e ofício do Senador Grassley sobre decisões com erros atribuídos a IA
+- Autores/veículo: reportagens (Washington Times 23/out/2025; FedScoop; Volokh Conspiracy 24/out/2025; Law360) e comunicado do Senate Judiciary Committee | jul-out/2025 | Tipo: caso real documentado (Judiciário) / ato de supervisão
+- Link: https://www.judiciary.senate.gov/press/rep/releases/grassley-scrutinizes-federal-judges-apparent-ai-use-in-drafting-error-ridden-rulings ; https://fedscoop.com/perplexity-chatgpt-error-ridden-orders-federal-judges/ ; https://reason.com/volokh/2025/10/24/two-federal-judges-apologize-for-issuing-opinions-with-ai-hallucinations (URLs de resultados de busca; não abertas)
+- Fatos e consequência (segundo o resumo de busca): o juiz Neals retirou em 23/jul/2025 decisão em caso de valores mobiliários de biofarmacêutica depois que a defesa apontou citações atribuídas incorretamente; o juiz Wingate substituiu por versão "corrigida" retroativa uma decisão sobre lei do Mississippi (DEI em escolas) e removeu a original do docket; Grassley (presidente do Senate Judiciary) perguntou se juízes, assessores ou estagiários usaram IA generativa; segundo respostas reportadas em ~23/out/2025, Neals atribuiu a um estagiário de direito que usou ChatGPT, em violação da política do gabinete, e Wingate a um assessor que usou IA e a publicação antes de revisão; Wingate criou regra de revisão por um segundo assessor.
+- Números-chave: sem valores [NÃO VERIFICADO]
+- Limitações declaradas: o resumo de busca informa relatos conflitantes (Washington Times diz que o gabinete de Wingate não tinha regra sobre IA; fontes divergem sobre se as respostas foram enviadas ao Senado ou ao Administrative Office).
+- Status: não aberto na origem [NÃO VERIFICADO]
+
+## 43. Cursor: bot de suporte "Sam" inventa política de uso (abr/2025)
+- Autores/veículo: reportagens (eWeek, AI Incident Database, Ground News) sobre posts de usuários e resposta do cofundador Michael Truell | abr/2025 | Tipo: caso real documentado (atendimento)
+- Link: https://www.eweek.com/news/cursor-ai-chatbot-hallucination-fake-policy ; https://incidentdatabase.ai/cite/1039/ (URLs de resultados de busca; não abertas)
+- Fatos e consequência (segundo o resumo de busca): usuários foram deslogados inesperadamente; o bot de suporte "Sam" respondeu com uma política de login que não existe; usuários publicaram cancelamentos de assinatura; Truell disse "We have no such policy", pediu desculpas, reembolsou o usuário e passou a rotular respostas de suporte geradas por IA; a causa real foi mudança de backend de segurança de sessão.
+- Números-chave: número de cancelamentos e de reembolsos não consta de forma consistente [NÃO VERIFICADO]
+- Limitações declaradas: o resumo de busca informa que as fontes variam sobre causa e detalhes além da fabricação do bot e do pedido de desculpas.
+- Status: não aberto na origem [NÃO VERIFICADO]
+
+## 44. ECRI: uso indevido de chatbots de IA é o risco nº 1 de tecnologia em saúde para 2026
+- Autores/veículo: ECRI (Top 10 Health Technology Hazards 2026), segundo Fierce Healthcare e outros | jan/2026 | Tipo: relatório institucional (lista anual de riscos com resumo executivo público; relatório completo para membros)
+- Link: https://www.fiercehealthcare.com/health-tech/ecri-flags-misuse-ai-chatbots-top-health-tech-hazard-2026 ; https://mlo-online.com/information-technology/news/55352952/ecri-releases-list-of-top-10-healthcare-technology-hazards-for-2026 (URLs de resultados de busca; não abertas)
+- Método e amostra: segundo o resumo de busca, ECRI testou chatbots de uso geral baseados em LLM (como ChatGPT, Claude e Grok) e excluiu produtos específicos de saúde; metodologia detalhada e amostra não localizadas [NÃO VERIFICADO].
+- Números-chave: classificação "No. 1" entre dez riscos para 2026; o resumo cita que chatbots "have suggested incorrect diagnoses, recommended unnecessary testing, promoted subpar medical supplies and even invented body parts" [NÃO VERIFICADO]
+- Limitações declaradas: o resumo de busca informa que só o resumo executivo é público; metodologia do ranking não foi aberta [NÃO VERIFICADO].
+- Status: não aberto na origem [NÃO VERIFICADO]
+
+## 45. AI-Powered Lawyering: AI Reasoning Models, Retrieval Augmented Generation, and the Future of Legal Practice (RCT com estudantes de direito)
+- Autores/veículo: Daniel Schwarcz, Sam Manning (co-primeiros autores), Patrick Barry, David R. Cleveland, J.J. Prescott, Beverly Rich | working paper SSRN (2025); publicação no Journal of Law & Empirical Analysis (2026) segundo resumo de busca | Tipo: estudo empírico (ensaio randomizado)
+- Link: https://www.law.berkeley.edu/wp-content/uploads/archive/2025/12/AI-Powered-Lawyering.pdf ; https://repository.law.umich.edu/pub_law_archive/772 (URLs de resultados de busca; não abertas); DOI [NÃO VERIFICADO]
+- Método e amostra (segundo o resumo de busca): estudantes de direito de anos finais (Clio cita 137) completaram seis tarefas jurídicas com Vincent AI (RAG), o1-preview (modelo de raciocínio) ou sem IA.
+- Números-chave: ganhos de produtividade de "38% to 115%" (Vincent) e "34% to 140%" (o1-preview); resultado de alucinação: Vincent produziu "roughly the same amount of hallucinations as participants who did not use AI at all", enquanto o1-preview teve algumas alucinações [NÃO VERIFICADO]. Resultado contrário ao discurso de que ferramentas jurídicas com IA elevam alucinações.
+- Limitações declaradas: segundo o resumo de busca, os modelos testados são mais antigos; amostra de estudantes, não de advogados.
+- Status: não aberto na origem [NÃO VERIFICADO]
+
+---
+
+## Buscas realizadas / lacunas
+
+### Termos e métodos de busca
+- arXiv (busca por listagem, aberta via curl): "legal hallucination", "fabricated citations court", "hallucinated case law sanctions attorneys", "hallucination court filings sanctions", "Hallucination-free legal research tools", "medical hallucination large language models clinical", "Whisper hallucination transcription", "AI incidents database analysis harms", "scribe hallucination", "clinical note hallucination", "AI scribe errors", "discharge summary LLM errors", "clinical knowledge LLMs human interactions", "customer service chatbot / agents reliability benchmark", "CRMArena-Pro", "Remote Labor Index", "TheAgentCompany", "Legal Retrieval for Public Defenders", "financial advice LLM audit", "AI Overviews health", "agent deleted database", "AI agent incidents deployed", "AI agents liability", "hallucination insurance claims", "sycophancy medical".
+- WebSearch (apenas resumos; sem abrir páginas): Charlotin database; Deloitte Australia/DEWR; Deloitte Terra Nova e Labrador; Ayinde v Haringey; Johnson v. Dunn; Walters v. OpenAI; Coomer v. Lindell; Wadsworth v. Walmart; Noland v. Land of the Free; Estate of Lokken v. UnitedHealth; Wolf River Electric v. Google; decisões brasileiras (TSE, TJSC, TST, TRF4, CNJ 615/2025); Digital Omnibus AI Act; Garcia v. Character Technologies; Klarna e CBA; Replit/SaaStr; juízes Neals e Wingate; Cursor "Sam"; ECRI 2026; Schwarcz et al. "AI-Powered Lawyering"; NBER (hallucinations em trabalho jurídico); BIS/ECB/Fed (alucinação em finanças); Moffatt v. Air Canada.
+- Abertos e lidos na origem: arXiv (PDF e página), hai.stanford.edu (AI Index 2025 e 2026), eur-lex.europa.eu (CELEX 62022CJ0203, 32024L2853, 32024R1689, 52025PC0836, 52025DC0045), anthropic.com (Project Vend 1 e 2), www25.senado.leg.br e www.camara.leg.br (PL 2338/2023), nber.org (apenas página de resumo, w35720), bis.org (página FSI Insights 63).
+
+### Domínios bloqueados (HTTP 403 no proxy ou falha de resolução) nesta sessão
+- Tribunais e decisões: courtlistener.com e storage.courtlistener.com (a API v4 retorna 401, exige token), caselaw.nationalarchives.gov.uk, law.justia.com, cases.justia.com, uscourts.gov, govinfo.gov, canlii.org, civilresolutionbc.ca, bailii.org, judiciary.uk, documentcloud.org, docketalarm.com, casetext.com, findlaw.com.
+- Bancos de incidentes e bases: damiencharlotin.com, incidentdatabase.ai, litigationtracker.law.georgetown.edu, haqq.ai, library.law.unc.edu.
+- Acadêmico e institucional: papers.ssrn.com, oecd.org, oecd.ai, doi.org, api.crossref.org, academic.oup.com, nature.com, science.org, pubmed e ncbi, nejm.org, thelancet.com, jamanetwork.com, bmj.com, medrxiv.org, openreview.net, aclanthology.org, huggingface.co, openai.com, assets.anthropic.com, dora.dev, weforum.org, conference.nber.org, users.nber.org, nber.org/system/files (PDFs de working papers retornam 403), api.semanticscholar.org e api.openalex.org (limite de uso excedido, HTTP 429), export.arxiv.org.
+- Governo e reguladores: dewr.gov.au, ftc.gov, sec.gov, cfpb.gov, fda.gov, congress.gov, europarl.europa.eu, whitehouse.gov, cnj.jus.br e atos.cnj.jus.br, stf.jus.br, planalto.gov.br, in.gov.br, dadosabertos.camara.leg.br.
+- Imprensa e escritórios (todos os testados): reuters.com, apnews.com, bbc.com, theguardian.com, nytimes.com, wsj.com, ft.com, bloomberg.com e news.bloomberglaw.com, theregister.com, ctvnews.ca, cbc.ca, abc.net.au, techcrunch.com, arstechnica.com, wired.com, theverge.com, fortune.com, reason.com, edrm.net, mondaq.com, jdsupra.com, lexology.com, abajournal.com, law360.com, migalhas.com.br, conjur.com.br, tjsc.jus.br, lex.com.br, turivius.com, entre outros; WebFetch retorna ENOTFOUND para domínios fora da lista permitida (testado em theregister.com e hai.stanford.edu; para este último, curl funcionou).
+- Domínios que funcionaram: arxiv.org, nber.org (páginas), hai.stanford.edu, bis.org (página HTML; o link .pdf do FSI Insights 63 devolve HTML, não PDF), eur-lex.europa.eu, digital-strategy.ec.europa.eu, ecb.europa.eu, federalreserve.gov, nist.gov, artificialintelligenceact.eu, anthropic.com, brookings.edu, camara.leg.br, www25.senado.leg.br.
+
+### O que não foi encontrado ou não foi verificado na origem
+- Textos integrais das decisões judiciais dos casos 16 a 21, 25 a 27 e 38 a 39 (tribunais e repositórios bloqueados); números, valores de multas e datas desses casos estão marcados como [NÃO VERIFICADO].
+- Contagem atual da base de Charlotin (damiencharlotin.com bloqueado); só a menção "over 1,000 filings" do paper arXiv:2606.21155 foi lida na origem.
+- Documento original do DEWR/Deloitte e da Deloitte de Terra Nova e Labrador; valores do reembolso e da revisão de citações.
+- Publicação em periódico (DOI) de: "Hallucination-Free?" (JELS, 2025), Bean et al. (arXiv:2504.18919) e Schwarcz et al. (JLEA, 2026); só os preprints foram lidos (os dois primeiros) ou nada foi aberto (Schwarcz).
+- Estado final (adoção e publicação) do Digital Omnibus on AI e da retirada formal da AILD em nov/2026.
+- Texto dos artigos sobre responsabilidade civil e transparência do PL 2338/2023 (só a tramitação foi aberta).
+- Nenhum paper de working paper NBER/SSRN com dados sobre alucinação em atividade jurídica ou médica pôde ser aberto; o PDF do NBER w35720 (patent drafting, Autor et al., 07/set/2026; DOI 10.3386/w35720) retornou 403 e o tema do paper é expertise, não alucinação, e não foi incluído.
+- Não foram localizadas na origem fontes sobre: Whisper em hospitais (Careless Whisper, arXiv:2402.08021, é de 2024, fora do período e não incluído); decisões do FTC (DoNotPay) e SEC ("AI washing"); decisão de Munique sobre AI Overviews (apenas resumo de busca); Mobley v. Workday; Raine v. OpenAI; estudos da Vals Legal AI e do OECD AI Incidents Monitor além do que consta no AI Index 2026.
+- Inconsistências internas observadas nas fontes abertas: arXiv:2503.05777 (n = 70 no Abstract versus 75 na seção 8); arXiv:2405.20362 (accuracy do Westlaw 42% em §1 e 41% em §6.1).
