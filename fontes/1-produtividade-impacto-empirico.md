@@ -77,3 +77,99 @@ Nota de método: fontes abertas diretamente (arXiv/NBER/etc.) via curl/pdftotext
 - Números-chave (Abstract, p. 2; p. 3-4; conclusão p. 29): "nearly 40 percent of the U.S. population age 18-64 uses generative AI"; "23 percent of employed respondents had used generative AI for work at least once in the previous week, and 9 percent used it every work day"; "Between 1 and 5 percent of all work hours are currently assisted by generative AI, and respondents report time savings equivalent to 1.4 percent of total work hours"; "mean time savings of 5.4 percent among all genAI work users" (2,2 h/semana); "potential aggregate productivity gain of 1.1 percent at current levels of worker genAI usage"; comparação com Acemoglu (2024): 0,7%.
 - Limitações declaradas (conclusão, p. 29): "we caution that this assumes all of the gains are internalized as higher worker output rather than increased leisure"; autores descrevem a estimativa como "rough" e o impacto de longo prazo como "uncertain".
 - Status: Verificado na fonte original (PDF). Observação de data: versão original é de set/2024; a revisão com estes números é de fev/2025.
+
+## 10. Generative AI at Work (atendimento ao cliente; versão publicada em 2025 no QJE)
+- Autores/veículo: Erik Brynjolfsson, Danielle Li, Lindsey R. Raymond | NBER WP 31161 (abr/2023, rev. nov/2023); publicação em Quarterly Journal of Economics, 2025 [NÃO VERIFICADO: página do periódico bloqueada (403); dados de volume/páginas não confirmados por mim] | Tipo: working paper NBER / artigo revisado por pares; estudo de campo quase-experimental (introdução escalonada)
+- Link: https://www.nber.org/papers/w31161 | PDF: https://www.nber.org/system/files/working_papers/w31161/w31161.pdf | DOI do periódico: https://doi.org/10.1093/qje/qjae044 [NÃO VERIFICADO; acesso bloqueado]
+- Método e amostra: introdução escalonada de assistente conversacional de IA generativa; dados de 5.179 atendentes de suporte ao cliente; ~3 milhões de conversas; 89% dos atendentes fora dos EUA, principalmente nas Filipinas (p. 11-12 do PDF, seção de dados).
+- Números-chave (Abstract, versão nov/2023, p. 2): "Access to the tool increases productivity, as measured by issues resolved per hour, by 14% on average, including a 34% improvement for novice and low-skilled workers but with minimal impact on experienced and highly skilled workers."; resolutions/hora: base 2,6, aumento de ~14%; queda de 9% no tempo médio de atendimento.
+- Limitações declaradas (Conclusão, p. 29): "our results do not capture the potential longer-term impacts of generative AI on skill demand, job design, wages, or customer demand"; sugere que top performers, que geram os exemplos usados para treinar a IA, "may even see a reduction in their pay because bonuses are calculated relative to other agents' performance". Nota: os números do Abstract são da versão NBER de 2023; a versão do QJE pode diferir [NÃO VERIFICADO].
+- Status: números verificados na versão NBER; publicação 2025 não verificada na fonte.
+
+## 11. The 2026 AI Index Report, capítulo "Economy" (Stanford HAI)
+- Autores/veículo: Stanford Institute for Human-Centered AI (AI Index Steering Committee) | AI Index 2026 (edição de 2026; data exata de publicação não consta na página aberta) | Tipo: relatório institucional (síntese de estudos)
+- Link: https://hai.stanford.edu/ai-index/2026-ai-index-report/economy
+- Método e amostra: síntese de dados e estudos de terceiros; o texto da página de destaques não detalha os estudos subjacentes (o capítulo completo está em "Download Full Chapter", não aberto).
+- Números-chave (destaque 9 da página): "Productivity gains from AI are largest in structured, measurable work where outputs are easy to monitor. Studies report gains of 14% to 15% in customer support, 26% in software development, and 50% in marketing output. Gains are smaller in tasks requiring deeper reasoning, and recent evidence raises concerns that heavy AI reliance may carry long-term learning penalties that slow skill development over time." Destaque 7: "Employment for software developers ages 22 to 25 has fallen nearly 20% from 2024." Destaque 8: "One-third of organizations expect AI to reduce their workforce in the coming year, even though large-scale job losses have not yet shown up in overall employment data." Destaque 4: consumo "estimated U.S. consumer surplus reached $172 billion annually by early 2026".
+- Limitações declaradas: não localizadas na página de destaques. Os estudos subjacentes (14-15%, 26%, 50%) não foram abertos por mim neste item; o item 10 corresponde ao 14%.
+- Status: página de destaques verificada na fonte original; capítulo completo [NÃO VERIFICADO].
+
+## 12. The AI Buildout and the Economy: Publicly Available Data to Assess AI's Impact (FEDS Note)
+- Autores/veículo: Paul E. Soto, Mason Thieu, Jeffrey S. Allen (Federal Reserve Board) | FEDS Notes, 17/jul/2026 | Tipo: nota de pesquisa de banco central, dados públicos agregados (BLS, BEA)
+- Link: https://www.federalreserve.gov/econres/notes/feds-notes/the-ai-buildout-and-the-economy-publicly-available-data-to-assess-ais-impact-20260717.html
+- Método e amostra: produtividade do trabalho setorial (valor adicionado real menos horas×emprego) por nível de exposição à IA (Alta: Informação, Finanças, Serviços Profissionais e de Negócios; Média; Baixa), Figura 9; indicadores de adoção, investimento e mercado de trabalho.
+- Números-chave (seção de produtividade): "Micro-level experiments consistently find productivity gains from AI tools (Brynjolfsson, Li, and Raymond, 2025; Cui et al. 2026)."; "While sectors with more exposure appear to have higher labor productivity growth, we see that productivity trends across all three levels have been relatively consistent over time, suggestive of micro-level productivity gains not adding up in aggregate." Conclusão: "the evidence as of the publication of this note is consistent with a buildout phase rather than the onset of broad-based displacement."
+- Limitações declaradas: "AI-exposed sectors may have ex-ante different productivity trends unrelated to AI"; "The absence of a large aggregate signal as of 2026 would not necessarily invalidate future productivity impacts, given the shallow adoption"; "AI's productivity effects are inherently hard to measure" (atribuição entre capital e TFP, intangíveis, preços em serviços).
+- Status: Verificado na fonte original (página HTML; sem numeração de páginas).
+
+## 13. The effects of generative AI on productivity, innovation and entrepreneurship (revisão de estudos experimentais)
+- Autores/veículo: Flavio Calvino, Jelmer Reijerink, Lea Samek (OECD) | OECD Artificial Intelligence Papers No. 39, jun/2025 | Tipo: relatório institucional (revisão de pesquisa experimental, fonte secundária)
+- Link: https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/06/the-effects-of-generative-ai-on-productivity-innovation-and-entrepreneurship_da1d085d/b21df222-en.pdf
+- Método e amostra: "reviews experimental research on the impact of generative AI on productivity, innovation, and entrepreneurship" (Abstract, p. 3), com tabela de estudos (final do documento); não é estudo primário.
+- Números-chave (Abstract e seções 2-3, valores citados de estudos de terceiros): "Findings suggest that AI's effectiveness depends on the user's experience and the task carried out"; citações: 14% mais questões resolvidas (atendimento), 26% mais tarefas concluídas (desenvolvedores), 55% mais linhas de código, escrita 40% mais rápida [números de página específicos não anotados].
+- Limitações declaradas (Introdução): "A key limitation of experimental approaches is often their difficulty in capturing long-term impacts, often due to constrains in study duration and data tracking"; o documento aponta lacunas sobre efeitos de longo prazo e sobre o entendimento dos trabalhadores quanto às limitações da IA (Abstract).
+- Status: Verificado na fonte original (PDF); números de página por afirmação não anotados.
+
+## 14. Does AI Save Time on Product Design? A Randomized Controlled Experiment of AI Prompt-to-Design Workflows
+- Autores/veículo: Remy Stewart, Olabode Anise, Andrew Hogan, Augustus Griffin (todos Figma, fornecedor da ferramenta testada) | arXiv:2609.26725v1, 22/set/2026 | Tipo: preprint, RCT. Observação: estudo conduzido pelo fornecedor da ferramenta (Figma Make); incluído por ter método e limitações explícitos.
+- Link: https://arxiv.org/abs/2609.26725 | PDF: https://arxiv.org/pdf/2609.26725 | DOI: https://doi.org/10.48550/arXiv.2609.26725 [padrão arXiv; não aberto]
+- Método e amostra: RCT com 50 designers de produto e 50 gerentes de produto; três tarefas padronizadas, com ou sem acesso ao Figma Make.
+- Números-chave (Abstract; §Resultados): "Among participants who completed the study tasks, access to Figma Make was associated with approximately 20% shorter completion times, with larger gains among product managers."; gerentes de produto: redução de 35% no tempo total (p<0,0001); designers: 17% "marginally significant" (p=0,049), concentrada na Tarefa 3 (26%).
+- Limitações declaradas (§5.2, 5 limitações): análise de tempo "limited to successfully completed tasks", e a ferramenta afetou a probabilidade de conclusão, de modo que os grupos de concluintes podem diferir ("reported time reduction should be interpreted alongside the completion results"); tarefas padronizadas e em ordem fixa que não capturam a ambiguidade e as mudanças de requisitos de projetos profissionais.
+- Status: Verificado na fonte original (PDF).
+
+## 15. Does AI Assistance Enhance or Erode Expertise? Evidence from a Three-Month Field Experiment in Patent Drafting
+- Autores/veículo: [autores não extraídos: página NBER aberta mostrou apenas o abstract; nomes não anotados] | NBER Working Paper 35720, set/2026, revisado out/2026 | Tipo: working paper NBER, RCT de campo pré-registrado
+- Link: https://www.nber.org/papers/w35720 | DOI: https://doi.org/10.3386/w35720
+- Método e amostra (abstract): "pre-registered three-month randomized controlled trial"; 133 advogados de patentes em onze escritórios de propriedade intelectual dos EUA; acesso a assistente de redação de patentes personalizado; trabalho avaliado por advogados de patentes especialistas, às cegas.
+- Números-chave (abstract): qualidade com IA "at 10 days (0.34 SD, p = 0.03) and 90 days (0.38 SD, p = 0.01), with larger gains among junior lawyers" [valores de p renderizados como "?" na página; leitura "p" é inferência do contexto]; tarefa sem IA após 3 meses: "Treated lawyers outperformed controls by 0.32 SD (p = 0.04), but this advantage was concentrated entirely among senior lawyers (0.45 SD, p = 0.02). Junior lawyers showed no average gain."; juniores "bifurcated, with sharply fewer mediocre scores offset by more poor and more good ones".
+- Limitações declaradas: não lidas (PDF retornou 403; só abstract). 
+- Status: abstract verificado na página NBER; corpo [NÃO VERIFICADO].
+
+## 16. Does Generative AI Narrow Education-Based Productivity Gaps? Evidence from a Randomized Experiment
+- Autores/veículo: [autores não anotados; também disponível como arXiv:2608.04198 segundo resultado de busca, não aberto] | NBER Working Paper 34851, fev/2026, revisado out/2026 | Tipo: working paper NBER, experimento randomizado online (fora de empresas)
+- Link: https://www.nber.org/papers/w34851 | DOI: https://doi.org/10.3386/w34851
+- Método e amostra (abstract): 1.174 adultos de 25-45 anos; tarefa de resolução de problema de negócios incentivada, com ou sem assistente de IA generativa, seguida de módulo de acompanhamento sem IA.
+- Números-chave (abstract): "In the control group without AI, higher-education participants outperform lower-education participants by 0.548 standard deviations; with AI, this gap falls to 0.139 standard deviations"; "treated participants do not perform worse than controls once AI is removed, and lower-education participants retain part of their gain, although a sizable education gap re-emerges"; desempenho de acompanhamento "substantially higher only when intensive AI use is combined with sustained effort on the task".
+- Limitações declaradas: não lidas (só abstract).
+- Status: abstract verificado na página NBER; corpo [NÃO VERIFICADO].
+
+## 17. Canaries in the Gold Mine (AI, capital organizacional e produtividade das firmas)
+- Autores/veículo: [autores não anotados] | NBER Working Paper 35684, ago/2026 | Tipo: working paper NBER, estudo observacional em nível de firma
+- Link: https://www.nber.org/papers/w35684 | DOI: https://doi.org/10.3386/w35684
+- Método e amostra (abstract): medida de investimento em IA baseada em emprego com habilidades de IA (de machine learning a IA generativa e agêntica), ligada à produtividade das firmas; medida de capital organizacional a partir de descrições de cargos.
+- Números-chave (abstract): "AI investments are associated with productivity growth in recent years, but not over the previous decade"; ganhos atribuídos ao acúmulo de capital organizacional ("durable firm-specific knowledge acquired through learning-by-doing"). Nenhum coeficiente numérico no abstract.
+- Limitações declaradas: não lidas (só abstract); desenho observacional.
+- Status: abstract verificado na página NBER; corpo [NÃO VERIFICADO].
+
+## 18. Randomized Controlled Trials for Phishing Triage Agent (agente de IA, triagem de phishing em SOC)
+- Autores/veículo: James Bono (Microsoft Corporation) | arXiv:2511.13860v1, 17/nov/2025 (documento datado de out/2025) | Tipo: preprint, RCT; estudo de funcionário do fornecedor (Microsoft Security Copilot Phishing Triage Agent)
+- Link: https://arxiv.org/abs/2511.13860 | PDF: https://arxiv.org/pdf/2511.13860 | DOI: https://doi.org/10.48550/arXiv.2511.13860 [padrão arXiv; não aberto]
+- Método e amostra: 167 analistas de segurança externos, 3 braços (Controle N=52; Aware N=56, vê veredictos do agente; Blind N=59, fila ordenada pelo agente sem referência à IA); fila de 25 e-mails reais reportados por funcionários da Microsoft, com falsos positivos/negativos simulados inseridos (§2).
+- Números-chave (Abstract; §3, Tabela 4): "agent-augmented analysts achieved up to 6.5 times as many true positives per analyst minute and a 77% improvement in verdict accuracy"; analistas gastaram "53% more time on malicious emails". Resultado contrário na Tabela 4: precisão do grupo Aware vs Controle em falsos negativos plantados do agente (SFN): 46% vs 17% (diferença 29 p.p., p=0,001), e em verdadeiros negativos confirmados 86% vs 65% (p=0,009), ou seja, mais concordância com o agente, inclusive quando ele errava (§3, ~p. 7; página exata não anotada).
+- Limitações declaradas: seção de limitações explícita não localizada [NÃO VERIFICADO]; autor afiliado ao fornecedor.
+- Status: Verificado na fonte original (PDF) quanto aos números citados.
+
+## 19. Estimating AI productivity gains from Claude conversations
+- Autores/veículo: Anthropic, Economics team (Economic Index) | 25/nov/2025 | Tipo: relatório institucional de fornecedor de IA, com método declarado (estimativas feitas pelo próprio modelo; sem validação com dados reais)
+- Link: https://www.anthropic.com/research/estimating-productivity-gains
+- Método e amostra: amostra de 100.000 conversas reais do Claude.ai; Claude estima o tempo da tarefa com e sem IA; agregação a tarefas O*NET.
+- Números-chave (Overview): "Claude estimates that AI reduces task completion time by 80%"; tarefas de "about 90 minutes" sem IA; extrapolação: "could increase US labor productivity growth by 1.8% annually over the next decade". Atualização de jan/2026 (relatório "Economic primitives") reportada em resultado de busca como ajuste por taxa de sucesso que reduz o ganho implícito para ~1,0 p.p. e 0,8 p.p. [NÃO VERIFICADO; página do relatório de jan/2026 não aberta].
+- Limitações declaradas (seção "Limitations"): "we lack real-world validation of Claude's time estimates"; "we can't account for additional time humans spend on tasks outside of their conversations with Claude, including validating the quality or accuracy of Claude's work"; amostra de Claude.ai "not representative"; cita que "a recent randomized controlled trial studying end-to-end software features did not see time savings due to AI".
+- Status: Verificado na fonte original (página Anthropic).
+
+## 20. The Effects of Generative AI on High-Skilled Work: Evidence from Three Field Experiments with Software Developers
+- Autores/veículo: Kevin Zheyuan Cui, Mert Demirer, Sonia Jaffe, Leon Musolff, Sida Peng, Tobias Salz | Management Science (DOI 10.1287/mnsc.2025.00535, via resultado de busca); versão SSRN postada em 2024, última revisão ago/2025 | Tipo: artigo revisado por pares / RCTs de campo (Microsoft, Accenture, empresa anônima Fortune 100)
+- Link: https://papers.ssrn.com/abstract=4945566 (SSRN; acesso retornou 403) | https://doi.org/10.1287/mnsc.2025.00535 [NÃO VERIFICADO: página do periódico não aberta]
+- Método e amostra (informação de busca, NÃO VERIFICADA na fonte): RCTs com acesso aleatório ao GitHub Copilot; 4.867 desenvolvedores no conjunto agrupado.
+- Números-chave [NÃO VERIFICADO na fonte original]: "26.08% increase in completed tasks (SE 10.3%)" no abstract SSRN, segundo a busca; desenvolvedores menos experientes com maior adoção e ganhos maiores. O FEDS Note de jul/2026 (item 12) cita "Cui et al. 2026" como evidência de ganhos em experimentos micro (verificado nessa nota).
+- Limitações declaradas: [NÃO VERIFICADO]; a busca relata que os autores enfatizam que cada experimento é ruidoso e os resultados variam entre eles.
+- Status: [NÃO VERIFICADO] (fonte original inacessível).
+
+## 21. AI IDEs or Autonomous Agents? Measuring the Impact of Coding Agents on Software Development
+- Autores/veículo: Shyam Agarwal, Hao He, Bogdan Vasilescu (Carnegie Mellon University) | arXiv:2601.13597v2 (27/jan/2026); aceito no MSR '26 (13-14/abr/2026, Rio de Janeiro) | Tipo: preprint/artigo de conferência; estudo observacional quase-experimental (diferenças-em-diferenças escalonadas)
+- Link: https://arxiv.org/abs/2601.13597 | PDF: https://arxiv.org/pdf/2601.13597 | DOI: https://doi.org/10.48550/arXiv.2601.13597 [padrão arXiv; não aberto]
+- Método e amostra: dataset AIDev (v3); adoção = primeiro pull request gerado por agente; resultados mensais por repositório (commits, linhas adicionadas, avisos de análise estática, complexidade cognitiva, duplicação); repositórios com ≥10 estrelas; amostras heterogêneas: 401 repositórios "agent-first" (AF) pareados a 606 controles e 117 repositórios com uso prévio de IDE com IA (IF) pareados a 73 controles (§Método).
+- Números-chave (Abstract; §Resultados): "large, front-loaded velocity gains only when agents are the first observable AI tool in a project; repositories with prior AI IDE usage experience minimal or short-lived throughput increases"; "static-analysis warnings and cognitive complexity rising by roughly 18% and 39%"; AF: +36,3% commits, +76,6% linhas adicionadas; IF: +3,1% e -6,3% (texto de resultados, p. não anotada).
+- Limitações declaradas (Discussão): coeficientes pré-tratamento significativos isolados em avisos de análise estática e complexidade, "not pervasive enough to indicate a sustained pre-trend or clear violation of parallel trends, but they are concerning and highlight a limitation of our quasi-experimental design and the underlying data"; amostra de repositórios open-source.
+- Status: Verificado na fonte original (PDF).
