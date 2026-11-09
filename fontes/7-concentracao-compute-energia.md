@@ -2,7 +2,7 @@
 
 Data da busca: 09/nov/2026
 Período-alvo: jan/2025 a nov/2026
-Nota de método: "Verificado na origem" = documento original aberto (PDF/HTML via curl) e números conferidos no texto. Páginas citadas = índice de página do arquivo PDF (não o número impresso), salvo indicação. Itens ou campos não abertos na origem levam [NÃO VERIFICADO]. Sem análise ou conclusões neste arquivo.
+Nota de método: "Verificado na origem" = documento original aberto (PDF/HTML via curl) e números conferidos no texto. Páginas citadas = índice de página do arquivo PDF (não o número impresso), salvo indicação. Itens ou campos não abertos na origem recebem o marcador de não verificado, aplicado apenas ao dado em questão. Itens 1 a 29: origem aberta (nos itens 3, 4, 10, 11, 19, 26 e 29 apenas resumo ou página oficial, não o texto integral). Itens 30 a 40: origem não aberta. Sem análise ou conclusões neste arquivo.
 
 ---
 
@@ -190,3 +190,186 @@ Nota de método: "Verificado na origem" = documento original aberto (PDF/HTML vi
 - Números-chave (exatos, resumo): "the top three platforms (Claude, ChatGPT, and DeepSeek) receive statistically indistinguishable satisfaction ratings"; "over 80% use two or more platforms, and switching costs are negligible"; "competitive plurality rather than winner-take-all consolidation among engaged users".
 - Limitações declaradas (p. 1): "Because the sample is drawn from technology-oriented communities, our findings characterize the preferences of active, engaged AI chat users"; usuários individuais, não empresas.
 
+## 22. Is Your LLM Overcharging You? Tokenization, Transparency, and Incentives
+- Título | autores ou veículo | data | tipo: Is Your LLM Overcharging You?... | Ander Artola Velasco, Stratis Tsirtsis, Nastaran Okati, Manuel Gomez-Rodriguez | arXiv:2505.21627, 27/mai/2025 | preprint teórico com experimentos
+- Link: https://arxiv.org/abs/2505.21627
+- Status: verificado na origem (resumo e PDF abertos)
+- Método e amostra: análise teórica do preço por token (provedores podem declarar tokenização mais fina sem que o usuário consiga provar); algoritmo heurístico de prova de conceito; experimentos com modelos Llama, Gemma e Ministral e prompts da LMSYS Chatbot Arena.
+- Números-chave (exatos): "users cannot prove, or even know, whether a provider is overcharging them" (resumo); para Llama-3.2-1B-Instruct, "a provider who uses Algorithm 2 can overcharge users by up to 11.2%, 1.8% and 0.28%, respectively for p = 0.99, 0.95, 0.90" (p. 9); "a pricing mechanism must price tokens linearly on their character count" para eliminar o incentivo (resumo). Resultado demonstra vulnerabilidade, não comportamento observado de provedores reais.
+- Limitações declaradas (p. 12, Seção 5): análise foca em mecanismos de preço aditivos; "providers would arguably only be forced to report plausible tokenizations if the users have a mechanism to verify"; heurística proposta como prova de conceito, "there may exist other, more sophisticated methods"; experimentos usam modelos das famílias Llama, Gemma e Ministral (fato do método, não limitação declarada como tal).
+
+## 23. Measuring the environmental impact of delivering AI at Google Scale
+- Título | autores ou veículo | data | tipo: Measuring the environmental impact of delivering AI at Google Scale | Cooper Elsworth, Keguo Huang, David Patterson, Ian Schneider, Robert Sedivy, Savannah Goodman, Ben Townsend, Parthasarathy Ranganathan, Jeff Dean, Amin Vahdat, Ben Gomes, James Manyika (Google) | arXiv:2508.15734, 21/ago/2025 | preprint técnico com instrumentação em produção (autoria do próprio fornecedor; dados internos não auditáveis externamente)
+- Link: https://arxiv.org/abs/2508.15734
+- Status: verificado na origem (resumo e PDF abertos)
+- Método e amostra: instrumentação da infraestrutura de serviço do Gemini Apps em produção; inclui potência de aceleradores ativos, energia do host (CPU/DRAM), máquinas ociosas e overhead do data center; referência de maio/2025.
+- Números-chave (exatos): "the median Gemini Apps text prompt consumes 0.24 Wh of energy - a figure substantially lower than many public estimates"; "a 33x reduction in energy consumption and a 44x reduction in carbon footprint for the median Gemini Apps text prompt over one year"; "0.26 mL" de água por prompt mediano (resumo); abordagem restrita "Existing Approach (10,000 prompts per kWh)" vs. completa "Comprehensive Approach (4,167 prompts per kWh)" (p. 4); "Llama 3.1 (70B) varies from ~580 to ~3600 prompts per kWh" conforme a metodologia de medição (p. 4).
+- Limitações declaradas: "External networking energy consumption is excluded due to a lack of operational control" e energia de dispositivos do usuário final fora do escopo (p. 5); medição refere-se ao prompt de texto mediano (não média) de um único fornecedor; o resumo ressalva que "these impacts are low compared to other daily activities, reducing the environmental impact of AI serving continues to warrant important attention".
+
+## 24. Holistic Agent Leaderboard: The Missing Infrastructure for AI Agent Evaluation
+- Título | autores ou veículo | data | tipo: Holistic Agent Leaderboard (HAL) | Sayash Kapoor, Benedikt Stroebl, ..., Percy Liang, Arvind Narayanan (Princeton e colaboradores); aceito no ICLR 2026 segundo resultado de busca [NÃO VERIFICADO: aceite] | arXiv:2510.11977, 13/out/2025 | preprint empírico (avaliação de agentes com custo)
+- Link: https://arxiv.org/abs/2510.11977
+- Status: verificado na origem (resumo e PDF abertos)
+- Método e amostra: "21,730 agent rollouts across 9 models and 9 benchmarks in coding, web navigation, science, and customer service with a total cost of about $40,000"; 2.5 bilhões de tokens de chamadas de modelos; fronteiras de Pareto acurácia x custo (dólar e tokens).
+- Números-chave (exatos): "higher reasoning effort reducing accuracy in the majority of runs" (resumo); "For 21 of 36 runs, higher reasoning effort does not improve accuracy" (p. 6); no ScienceAgentBench "o4-mini scores 27% while being about 5x cheaper than GPT-5, which scores 30%" (p. 5); modelos mais frequentes na fronteira: "Gemini 2.0 Flash (7 of 9 benchmarks), GPT-5 (4 of 9), and o4-mini Low (4 of 9)"; menos frequente "DeepSeek R1 (0 of 9)" (Figura 2, p. 7); "agents vary widely in costs, but evaluations rarely report these costs" (p. 2).
+- Limitações declaradas: seção de limitações específica não localizada na extração do texto [NÃO VERIFICADO]; a restrição a 9 modelos e 9 benchmarks é do desenho do estudo.
+
+## 25. Regulamento (UE) 2022/2554 (DORA): concentração de risco TIC e provedores críticos
+- Título | autores ou veículo | data | tipo: Regulation (EU) 2022/2554 on digital operational resilience for the financial sector (DORA) | Parlamento Europeu e Conselho da UE | adotado 14/dez/2022; aplicável desde 17/jan/2025 | ato regulatório
+- Link: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R2554
+- Status: verificado na origem (texto em HTML aberto: Art. 29, Art. 31, Art. 64)
+- Fatos (texto legal): Art. 29(1): entidades financeiras devem avaliar se um contrato levaria a "contracting an ICT third-party service provider that is not easily substitutable" ou a "multiple contractual arrangements ... with the same ICT third-party service provider"; Art. 31(1)(a): as ESAs "designate the ICT third-party service providers that are critical for financial entities"; critérios do Art. 31(2) incluem impacto sistêmico, dependência para funções críticas e "the degree of substitutability", considerando "the lack of real alternatives, even partial, due to the limited number of ICT third-party service providers active on a specific market" e "difficulties in relation to partially or fully migrating the relevant data and workloads ... due either to significant financial costs, time or other resources"; Art. 64: "It shall apply from 17 January 2025."
+- Consequência concreta: primeira lista de 19 provedores críticos (incluindo AWS, Google Cloud e Microsoft) publicada pelas ESAs em nov/2025 segundo cobertura de imprensa; a lista oficial não foi aberta (domínios das ESAs inacessíveis) [NÃO VERIFICADO].
+- Limitações declaradas: não se aplica (texto normativo).
+
+## 26. Proposal for the Cloud and AI Development Act (CADA), COM(2026) 502
+- Título | autores ou veículo | data | tipo: Proposal for the Cloud and AI Development Act (CADA) | Comissão Europeia (DG CONNECT) | 03/jun/2026 | proposta legislativa (ainda não é lei; em tramitação)
+- Link: https://digital-strategy.ec.europa.eu/en/library/proposal-cloud-and-ai-development-act-cada
+- Status: página oficial da Comissão aberta na origem; texto integral da proposta, anexos e avaliação de impacto não abertos (domínio de download ec.europa.eu inacessível)
+- Fatos (página oficial): "The Commission has adopted a proposal for the Cloud and AI Development Act (CADA)"; três objetivos: pesquisa/desenvolvimento/inovação, capacidade ("accelerating the conditions for deploying data centres across the EU") e autonomia ("introducing a single EU-wide assessment framework for cloud and AI sovereignty, accompanied by a public sector adoption mechanism"); complementa "Chips Act 2.0 and the EU Open Source Strategy"; documentos listados: COM(2026) 502 (proposta e anexos) e SWD(2026) 502 (avaliação de impacto, partes 1 e 2, e resumo).
+- Números: "more than 70% of the European cloud market" detido por três hiperescaladores não europeus e meta de triplicar capacidade de data centers até 2035 aparecem só em resumos de escritórios de advocacia [NÃO VERIFICADO].
+- Limitações declaradas: não se aplica (texto legislativo em tramitação; conteúdo pode mudar).
+
+## 27. The AI Ecosystem: Structure, Financing, and Financial Stability Considerations (IMF Technical Notes and Manuals 2026/13)
+- Título | autores ou veículo | data | tipo: The AI Ecosystem: Structure, Financing, and Financial Stability Considerations | Yingyuan Chen, Deepali Gautam, Jason Wu (FMI) | 2026 (mês exato não localizado no PDF; dados até 2026:Q2) | nota técnica institucional com dados de mercado e modelagem GARCH
+- Link: https://www.imf.org/-/media/files/publications/tnm/2026/english/tnmea2026013.pdf
+- Status: verificado na origem (PDF aberto)
+- Método e amostra: mapeamento do "AI Value Stack" por camadas; dados Bloomberg; análise de 14 maiores acordos de financiamento circular nos EUA com divulgação pública; modelos DCC-GARCH e multivariado-GARCH com retornos semanais de ações desde 2016.
+- Números-chave (exatos): "Hyperscalers alone accounted for roughly $500 billion in capital expenditure (capex) in 2025, while total AI-related capex is projected to exceed $4 trillion by 2029, with close to 75 percent originating from hyperscalers" (p. 8); "the largest AI firms accounting for about 35 percent of total market capitalization" (p. 8); "The IMF staff have investigated 14 of the largest circular financing deals in the United States ... account for close to 50 and 40 percent of revenue and market capitalization, respectively ... their market-implied valuation is about $20 trillion" (p. 14); "Some of the most systemically relevant nodes remain private and operate with limited disclosure. Foundational model labs—including OpenAI, Anthropic ..." (p. 12); "Current financial stability risks appear manageable, but vulnerabilities could build as leverage, concentration, and interconnectedness increase" (p. 4).
+- Limitações declaradas: "Current estimates on financing and revenue commitments likely represent a lower bound on the eventual scale of a circular financing arrangement" (p. 14); acordos analisados são os que têm "public disclosures and were subject to media reports" (p. 14); "Loss-making GPU/Neocloud firms are excluded from valuation comparisons" (p. 11); aviso padrão de que as opiniões não representam necessariamente as do FMI.
+
+## 28. Certificates without Electrons? Theory and Evidence on Impacts from AI-Driven Power Demand
+- Título | autores ou veículo | data | tipo: Certificates without Electrons?... | Dana Golden, Aruna Balasubramanian, Niranjan Balasubramanian | arXiv:2606.00811, 30/mai/2026 (v2 de 2/ago/2026) | preprint empírico (diferenças em diferenças) com modelo teórico
+- Link: https://arxiv.org/abs/2606.00811
+- Status: verificado na origem (resumo e PDF abertos)
+- Método e amostra: modelo de teoria dos jogos (RECs, PPAs, colocação atrás do medidor) e diferenças em diferenças escalonadas usando lançamentos de LLMs como experimento natural, com base de dados nova ligando atividade de IA a resultados da rede local; seção de identificação com testes placebo e de tendências paralelas.
+- Números-chave (exatos): "Data centers now account for 4.4% of United States electricity demand"; "AI demand significantly increases fossil generation, wholesale prices (up to 25% in treated PJM zones), and outage frequency (0.5-1 additional outages per year) near data centers, with impacts scaling in model size" (resumo, p. 2); "Data centers with on-site generation exhibit a sign reversal in power-quality effects"; "REC-only strategies do not" mitigar impactos (resumo); aumento de geração fóssil próxima "on the order of terawatt-hours" (p. 5).
+- Limitações declaradas (p. 4): "There is a lack of specific information about when and where models are trained and released"; "The DiD method at its core relies on the parallel trends assumption"; possíveis fatores de confusão; autores relatam testes de robustez (placebo, tendências paralelas).
+
+## 29. Siting and Curtailment Depth Limit the Grid Headroom Available to New Large Loads
+- Título | autores ou veículo | data | tipo: Siting and Curtailment Depth Limit the Grid Headroom Available to New Large Loads | Nils Johnson, Geoff Blanford, John E.T. Bistline | arXiv:2611.00462, 30/out/2026 | preprint (modelagem de sistema energético, 16 regiões dos EUA)
+- Link: https://arxiv.org/abs/2611.00462
+- Status: resumo verificado na origem; leitura parcial do PDF
+- Método e amostra: modelo nacional de sistemas de energia que co-otimiza geração horária e curtailment de carga em 16 regiões dos EUA.
+- Números-chave (exatos, resumo): "Data center demand is increasing faster than generation can be built"; "50 GW can be served while curtailing less than 0.1% of its annual energy"; "Most regions require curtailment deeper than 90% in at least one hour, so the load must disconnect or have sufficient on-site resources to provide full back up"; "announced data center locations are not aligned with modeled headroom and relying on existing generation fleets raises CO2 emissions and wholesale electricity prices".
+- Limitações declaradas: premissas do modelo (por exemplo, localização das cargas alinhada à folga de flexibilidade) discutidas na introdução (p. 2); seção formal de limitações [NÃO VERIFICADO].
+
+---
+
+# Fontes localizadas, mas não abertas na origem (domínio bloqueado na rede da sessão)
+
+Os itens 30 a 40 foram identificados por busca na web. O documento original não pôde ser aberto; os dados citados vêm de trechos de resultados de busca e de resumos secundários e não foram conferidos no texto original. Páginas e seções de origem não disponíveis.
+
+## 30. Energy and AI (IEA)
+- Título | autores ou veículo | data | tipo: Energy and AI | International Energy Agency | abr/2025 | relatório institucional com cenários
+- Link: https://www.iea.org/reports/energy-and-ai (domínio iea.org bloqueado)
+- Status: [NÃO VERIFICADO]
+- Método e amostra: modelagem de cenários de demanda elétrica de data centers (detalhes do método não conferidos).
+- Números-chave conforme resultados de busca: [NÃO VERIFICADO] demanda global de data centers de ~415 TWh em 2024 (~1,5% da eletricidade mundial), ~945 TWh em 2030 no caso-base, faixa de 700 a 1.700 TWh em 2035; ~20% dos projetos planejados de data centers em risco de atraso por restrições de rede.
+- Verificação parcial indireta: a nota FEDS de out/2025 (item 13) cita "the IEA projects that global electricity consumption from data centers will more than double by 2030"; o AI Index 2026 usa dados do IEA (2025) nas Figuras 1.4.12 e 1.4.13 (p. 41).
+- Limitações declaradas: [NÃO VERIFICADO]
+
+## 31. 2024 United States Data Center Energy Usage Report (LBNL)
+- Título | autores ou veículo | data | tipo: 2024 United States Data Center Energy Usage Report | Lawrence Berkeley National Laboratory (encomendado pelo DOE) | dez/2024 (divulgação pública em 2025 segundo resultados; data de publicação fora do período-alvo por poucos dias) | relatório técnico de laboratório nacional
+- Link: https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers e https://newscenter.lbl.gov/2025/01/15/berkeley-lab-report-evaluates-increase-in-electricity-demand-from-data-centers/ (domínios energy.gov e lbl.gov bloqueados)
+- Status: [NÃO VERIFICADO]
+- Números-chave conforme resultados de busca: [NÃO VERIFICADO] consumo de data centers de 58 TWh em 2014 para 176 TWh em 2023 (~4,4% do consumo anual dos EUA, sem criptomoedas); projeção de 325 a 580 TWh em 2028.
+- Limitações declaradas: [NÃO VERIFICADO]; resultado de busca registra que a revisão de 2024 alterou a linha de base de 2014 em relação ao relatório de 2016, o que exige cuidado em comparações de crescimento.
+
+## 32. FTC Staff Report on AI Partnerships and Investments (6(b) study)
+- Título | autores ou veículo | data | tipo: Staff Report on AI Partnerships & Investments 6(b) Study | Federal Trade Commission (Office of Technology) | 17/jan/2025 | relatório de autoridade de concorrência com base em ordens 6(b)
+- Link: https://www.ftc.gov/system/files/ftc_gov/pdf/p246201_aipartnerships6breport_redacted.pdf (domínio ftc.gov bloqueado)
+- Status: [NÃO VERIFICADO]
+- Fatos conforme resultados de busca: [NÃO VERIFICADO] cobre três parcerias (Microsoft-OpenAI, Amazon-Anthropic, Google-Anthropic) e cinco empresas; ordens 6(b) emitidas em jan/2024 e informações fornecidas até set/2024; termos destacados incluem participações societárias relevantes, direitos de participação em receita, direitos de consulta e obrigações de exclusividade; Comissão votou 5-0 para divulgar; comissários Ferguson e Holyoak discordaram parcialmente da seção "Areas to Watch".
+- Limitações declaradas conforme resultados de busca: [NÃO VERIFICADO] "A comprehensive analysis of the subject partnerships is beyond the scope of the report."
+
+## 33. Cloud services market investigation: final decision (CMA, Reino Unido)
+- Título | autores ou veículo | data | tipo: Cloud services market investigation, final decision | Competition and Markets Authority | 31/jul/2025 | decisão de autoridade de concorrência
+- Link: https://www.gov.uk/cma-cases/cloud-services-market-investigation (domínio gov.uk bloqueado)
+- Status: [NÃO VERIFICADO]
+- Fatos conforme resultados de busca: [NÃO VERIFICADO] AWS e Microsoft com cada uma entre 30% e 40% do gasto em nuvem no Reino Unido; barreiras apontadas: taxas de egress, arquiteturas incompatíveis e regras de licenciamento de software da Microsoft; remédio recomendado: investigações de Status de Mercado Estratégico (SMS) sob a lei DMCC, com decisão sobre priorização prevista para o 1º trimestre de 2026; um artigo de abril/2026 do Diginomica (opinião, não verificado) relata que a CMA teria optado por investigar apenas a Microsoft.
+- Limitações declaradas: [NÃO VERIFICADO]
+
+## 34. Investigações de mercado da Comissão Europeia sobre computação em nuvem sob o Digital Markets Act (AWS e Azure)
+- Título | autores ou veículo | data | tipo: Market investigations into cloud computing under the DMA | Comissão Europeia | aberto em 18/nov/2025 | procedimento regulatório (ato da Comissão)
+- Link: sem link oficial aberto (domínios ec.europa.eu e digital-markets-act.ec.europa.eu bloqueados); cobertura de imprensa citada na busca, por exemplo https://www.theregister.com/2025/11/18/amazon_microsoft_cloud_dma/
+- Status: [NÃO VERIFICADO]
+- Fatos conforme resultados de busca: [NÃO VERIFICADO] três investigações: duas para avaliar designação de AWS e Azure como controladores de acesso (gatekeepers) mesmo abaixo dos limiares quantitativos, e uma sobre o setor de nuvem como um todo, com relatório final em até 18 meses; meta de concluir as duas primeiras em 12 meses; relatos de visão preliminar da Comissão em junho de 2026 de que ambas deveriam ser designadas (apenas imprensa); decisão final de designação não localizada.
+- Limitações declaradas: [NÃO VERIFICADO]
+
+## 35. PJM Independent Market Monitor: análise dos leilões de capacidade e carga de data centers
+- Título | autores ou veículo | data | tipo: Análises do Monitoring Analytics (monitor de mercado independente da PJM) sobre os leilões de capacidade 2025/26, 2026/27 e 2027/28 | Monitoring Analytics | 2025 a 2026 | relatório de monitor de mercado
+- Link: https://www.monitoringanalytics.com (domínio bloqueado); cobertura secundária: https://www.utilitydive.com/news/pjm-capacity-energy-market-reliability-monitoring-analytics/814647/
+- Status: [NÃO VERIFICADO]
+- Números-chave conforme resultados de busca: [NÃO VERIFICADO] preço de compensação de US$ 329,17/MW-dia para 2026/27 em todas as zonas (no teto de preço aprovado pela FERC); data centers creditados com US$ 9,3 bilhões dos US$ 14,7 bilhões do leilão 2025/26 e com US$ 7,3 bilhões (82%) do aumento de receita; estimativas divergentes para o total acumulado em três leilões (US$ 21,3 bilhões em US$ 47,2 bilhões segundo um resumo; US$ 23,1 bilhões segundo outro); para 2027/28 cerca de US$ 6,5 bilhões (40%) de US$ 16,4 bilhões; recomendação do monitor de um leilão separado para data centers.
+- Limitações declaradas: [NÃO VERIFICADO]; os próprios resultados de busca registram números conflitantes de custos e de déficit de capacidade.
+
+## 36. Summary of the Amazon DynamoDB Service Disruption in the Northern Virginia (US-EAST-1) Region
+- Título | autores ou veículo | data | tipo: Post-event summary | Amazon Web Services | 19 a 20/out/2025 (evento); resumo publicado após o evento | caso real documentado (incidente de nuvem)
+- Link: https://aws.amazon.com/message/101925/ (domínio aws.amazon.com bloqueado)
+- Status: [NÃO VERIFICADO]
+- Fatos conforme resultados de busca: [NÃO VERIFICADO] falha na região us-east-1 de 23:48 PDT de 19/out a 14:20 PDT de 20/out (cerca de 14,5 horas segundo o resumo oficial citado); causa-raiz: condição de corrida em serviço interno de automação de DNS do DynamoDB, que gerou registro DNS vazio para o endpoint regional; afetou DynamoDB, APIs do EC2 e Network Load Balancer; relatos de terceiros (não conferidos) citam aplicativos e bancos fora do ar e divergem quanto ao horário final e ao número de serviços.
+- Consequência concreta e limitações: [NÃO VERIFICADO]
+
+## 37. The Latent Role of Open Models in the AI Economy
+- Título | autores ou veículo | data | tipo: The Latent Role of Open Models in the AI Economy | Frank Nagle, Daniel Yue | SSRN (nov/2025; id 5767103 segundo busca) | working paper empírico
+- Link: https://papers.ssrn.com/abstract=5767103 (ssrn.com bloqueado; mirrors também bloqueados)
+- Status: [NÃO VERIFICADO]
+- Método e amostra conforme resultados de busca: [NÃO VERIFICADO] uso diário de tokens no OpenRouter de maio a setembro de 2025, estimado em ~1% do gasto global com inferência de IA.
+- Números-chave conforme resultados de busca: [NÃO VERIFICADO] modelos fechados com em média 80% dos tokens mensais apesar de preços cerca de seis vezes maiores; modelos abertos com preços ~84% menores e desempenho de 90% ou mais em benchmarks comuns; economia adicional estimada de US$ 24,8 bilhões ao consumidor em 2025 (outros resumos citam US$ 20 a 48 bilhões, com premissas diferentes).
+- Limitações declaradas: [NÃO VERIFICADO]; a amostra (OpenRouter) cobre fração pequena do mercado conforme os próprios resultados.
+
+## 38. Artificial Intelligence Markets: Recent Developments and Competition Issues (OECD)
+- Título | autores ou veículo | data | tipo: Artificial Intelligence markets: recent developments and competition issues | OECD | 2025/2026 (data exata não conferida) | relatório institucional de organização internacional
+- Link: https://www.oecd.org/en/publications/artificial-intelligence-markets_d531d73f-en/full-report.html (oecd.org retorna 403 na rede da sessão)
+- Status: [NÃO VERIFICADO]
+- Fatos conforme resultados de busca: [NÃO VERIFICADO] aponta forte concentração de insumos (computação, dados e habilidades), vantagens de pioneiro e integração vertical crescente; ao mesmo tempo desempenho crescente, preços em queda e mais desenvolvedores e provedores de modelos de fundação; concentração mais entrincheirada a montante (hardware e dados); evidências iniciais de concorrência de provedores especializados contra as grandes empresas. Resultado de busca separado cita working paper da OECD segundo o qual a adoção de IA não generativa não está associada a aumentos significativos de poder de mercado.
+- Limitações declaradas: [NÃO VERIFICADO]
+
+## 39. Dynamism in generative AI markets after the release of ChatGPT (André et al.)
+- Título | autores ou veículo | data | tipo: coluna VoxEU/CEPR resumindo working paper de André et al. | André et al. | 2025 | working paper e coluna de divulgação
+- Link: https://cepr.org/voxeu/columns/dynamism-generative-ai-markets-release-chatgpt (cepr.org bloqueado)
+- Status: [NÃO VERIFICADO]
+- Números-chave conforme resultados de busca: [NÃO VERIFICADO] participação dos EUA em LLMs em janeiro de 2025 entre 86% (cenário de altos custos de troca) e 59% (cenário de baixos custos de troca); participação de desenvolvedores chineses de 5% (altos custos de troca) a 36% (baixos) no 2º trimestre de 2024; conclusão relatada de que a posição dominante de incumbentes digitais não impediu inovação nem o acesso a modelos melhores.
+- Limitações declaradas: [NÃO VERIFICADO]; o intervalo depende de pressupostos sobre custos de troca (conforme os próprios resultados de busca).
+
+## 40. Estudos sobre data centers e preços de eletricidade com resultados divergentes (CEPR DP 21854; EPRI; Dallas Fed WP 2606)
+- Título | autores ou veículo | data | tipo: três working papers: (a) Scalera, Bosetti, Pecci, CEPR Discussion Paper 21854; (b) Watten et al., EPRI working paper; (c) Kay, Reaser, Taylor, Dallas Fed Working Paper 2606 | 2026 | working papers empíricos
+- Link: https://econpapers.repec.org/RePEc:cpr:ceprdp:21854 ; https://www.dallasfed.org/~/media/documents/research/papers/2026/wp2606r1.pdf (domínios bloqueados); EPRI: https://esca.epri.com/_astro/2026-jun-have-data-centers-raised-your-electric-bill.CVr2j5ls.pdf (bloqueado)
+- Status: [NÃO VERIFICADO]
+- Números-chave conforme resultados de busca: [NÃO VERIFICADO] (a) aumento de preços residenciais de cerca de 13% para um desvio-padrão (dez data centers) e 0,182 centavos/kWh por instalação adicional; (b) dobrar a capacidade de data centers reduziria preços residenciais em cerca de 4%, sem evidência de subsídio cruzado entre classes; (c) efeitos em mercados atacadistas com heterogeneidade geográfica considerável; relatório de consultoria E3 (mai/2026) observa que muitos estudos dependem de correlação.
+- Limitações declaradas: [NÃO VERIFICADO]; os sinais dos efeitos divergem entre os estudos conforme os próprios resultados de busca.
+
+---
+
+# Buscas realizadas / lacunas
+
+## Termos de busca usados (web e arXiv)
+- IEA Energy and AI data centre electricity 945 TWh; LBNL 2024 United States Data Center Energy Usage Report 176 TWh
+- market concentration generative AI foundation models cloud compute dependence; NBER working paper LLM market structure competition pricing; NBER OR arXiv empirical data centers retail electricity prices
+- Stanford AI Index 2025 inference cost 280-fold open-weight gap; Stanford AI Index 2026 key takeaways
+- ECB Financial Stability Review 2025 AI concentration; BIS Annual Economic Report AI compute concentration; Federal Reserve FEDS Notes data center electricity AI
+- FTC 6(b) AI partnerships January 2025; CMA cloud services market investigation final decision; European Commission DMA market investigation cloud AWS Azure; Cloud and AI Development Act; ESAs critical ICT third-party providers DORA
+- PJM capacity auction data centers market monitor; AWS us-east-1 outage October 2025
+- IMF working paper AI data centers electricity; IMF working paper AI market concentration; Brookings AI compute concentration; Epoch AI power demands of frontier AI training
+- Nagle Yue latent role open models; André dynamism generative AI markets; OECD Artificial intelligence markets
+- arXiv (busca direta, com resultados irregulares): LLM inference prices, open-weight models economic, AI supercomputers trends, data center energy AI, market concentration generative AI, cloud concentration AI vendor lock-in, energy per query LLM inference, GPU rental price, sovereign AI compute, hyperscaler capex
+- Redata (Brasil), MP 1318/2025, camara.leg.br
+
+## Domínios bloqueados ou sem acesso nesta sessão (testados)
+- Sem resolução de DNS / bloqueados: iea.org, gov.uk (incluindo assets.publishing.service.gov.uk), ftc.gov, justice.gov, competition-policy.ec.europa.eu, ec.europa.eu (incluindo presscorner e arquivos de download), digital-markets-act.ec.europa.eu, europarl.europa.eu, curia.europa.eu, epoch.ai, lbl.gov, energy.gov, eia.gov, sec.gov, fsb.org, bankofengland.co.uk, eba/eiopa/esma.europa.eu, aws.amazon.com, cepr.org, dallasfed.org, econpapers/ideas.repec.org, monitoringanalytics.com, utilitydive.com, courtlistener.com (403), congress.gov (403), openalex (cota diária esgotada, sem uso de chave), api.semanticscholar.org (429), reuters.com, cnbc.com, ft.com, wsj.com, bloomberg.com, nature.com, sciencedirect.com, springer, wiley, cambridge.org, jstor.org, openreview.net, dl.acm.org, linuxfoundation.org, mitsloan.mit.edu, promarket.org, issues.org.
+- Retornam 403 (política de rede): oecd.org, papers.ssrn.com, science.org, academic.oup.com, weforum.org.
+- Acessíveis e usados: arxiv.org, nber.org (apenas páginas de resumo; PDFs retornam "Access denied"), hai.stanford.edu, bis.org, federalreserve.gov, ecb.europa.eu, eur-lex.europa.eu, digital-strategy.ec.europa.eu (instável, com respostas 429 em parte das tentativas), imf.org (apenas caminhos diretos de arquivos), doi.org (redirecionamento).
+- Nenhuma tentativa de contornar bloqueios ou de alterar configurações de ambiente.
+
+## O que não foi encontrado ou não pôde ser verificado
+- Textos integrais dos working papers NBER 34608, 33139 e 35953 (PDF com acesso negado): números e limitações restritos aos resumos; corpo do texto não lido.
+- Epoch AI (publicações sobre preços de inferência, demanda de energia de treino de modelos de fronteira e tendências de compute): domínio bloqueado; resumo de busca registra projeção de 4 a 16 GW para os maiores treinos em 2030 e crescimento de 2,2x a 2,9x ao ano da demanda de potência, sem conferência na origem.
+- Decisões judiciais: nenhuma decisão judicial (por exemplo, processos de remédios contra a Google nos EUA ou casos de antitruste contra fornecedores de chips) pôde ser aberta em fonte primária; nenhum caso judicial verificado neste arquivo.
+- Atos de concorrência primários (FTC, CMA, Comissão Europeia): apenas via resultados de busca (itens 32 a 34).
+- Lista oficial de provedores críticos de TIC sob DORA (ESAs, nov/2025): não aberta; só o texto do regulamento foi verificado (item 25).
+- Casos de dependência de fornecedor em nível de empresa usuária (por exemplo, restrição de acesso a APIs por um provedor a um cliente, descontinuação de modelo, mudança de preços): não localizados em fonte primária acessível.
+- Brasil: Redata (MP 1318/2025, depois PL 278/2026): resultados de busca divergem quanto à situação final; texto oficial no camara.leg.br não localizado nesta sessão; nenhuma fonte brasileira verificada neste arquivo.
+- OECD (relatório "Artificial intelligence markets" e roundtable de infraestrutura de IA, dez/2025): bloqueado (403).
+- Preços de inferência de agentes em produção e custos de compute para empresas usuárias em contratos reais (preços de enterprise não são publicados; a nota FEDS de jul/2026 registra essa limitação).
+- Dados de participação de mercado de nuvem para IA (AWS, Azure, Google) em fonte primária verificada: não localizados; o item 33 traz apenas a participação de 30% a 40% do gasto no Reino Unido segundo resultados de busca.
